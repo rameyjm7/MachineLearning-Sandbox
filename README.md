@@ -37,3 +37,39 @@ This repository contains a collection of Jupyter notebooks developed during a De
 - TensorFlow / PyTorch
 - NumPy, Matplotlib, scikit-learn
 - Jupyter Notebook
+
+
+
+## Open Set Incremental Learning (OSIL) and Open World Learning
+
+### Open Set Incremental Learning (OSIL)
+Traditional supervised learning assumes a closed set of classes known during training. **OSIL** relaxes this assumption by allowing models to:
+1. **Recognize unknowns** – detect when an input does not belong to any of the classes seen so far.
+2. **Adapt incrementally** – integrate new classes into the model while retaining knowledge of old ones.
+
+Our OSIL experiments span multiple domains:
+- **Image datasets** (MNIST, CIFAR-10, CIFAR-100, Tiny-ImageNet, Oxford Pets, Sports Videos).
+- **Wireless signal datasets** (RML2016a, RML2018a).  
+
+The workflow includes:
+- Training on a subset of classes.
+- Identifying unseen inputs using entropy thresholds, distance metrics, or confidence-based rejection.
+- Expanding the classifier to include new labels.
+- Using a **replay buffer** or knowledge distillation to reduce catastrophic forgetting.
+
+For example, in `open_set_incremental_learning_cifar100.ipynb`, the model starts with a small subset of CIFAR-100 classes and progressively integrates additional classes, testing scalability under a large class space.
+
+---
+
+### Open World Learning
+While OSIL focuses on extending models in controlled increments, **Open World Learning** takes a step further. It envisions systems that operate in **dynamic, real-world environments**, where:
+- Novel classes appear **continuously and unpredictably**.
+- The model must **autonomously detect, label, and learn** from these classes.
+- Adaptation must occur with minimal supervision, ideally in **real time**.
+
+In our experiments, Open World Learning means building pipelines where:
+- Unknown signals/images are flagged automatically.
+- Novel categories are assigned new labels.
+- The model retrains itself (with buffering and fine-tuning) without requiring a full restart.
+
+The long-term goal is to create **lifelong learning systems** that remain robust and flexible in the face of change — whether classifying modulation types in wireless communications or adapting to unseen object categories in computer vision tasks.
