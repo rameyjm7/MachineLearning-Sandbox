@@ -2,7 +2,7 @@
 
 This repository contains a collection of Jupyter notebooks developed during a Deep Learning course and ongoing research. The notebooks cover a wide range of architectures, datasets, and experimental approaches, from foundational RNNs to advanced open set incremental learning.
 
-## Contents
+## Contents under DeepLearning_scratch
 
 - **RNN / LSTM Experiments**
   - `lstm_rnn_original.ipynb` – baseline RNN/LSTM implementation.
