@@ -25,5 +25,3 @@ The final model is evaluated on 5 000 randomly selected test samples, visualizin
   - 50 prediction visualizations (true vs. predicted)  
   - Normalized confusion matrix  
 
-**Dataset Path**  
-`/home/rameyjm7/.cache/kagglehub/datasets/pankrzysiu/cifar10-python/versions/1/cifar-10-batches-py`
