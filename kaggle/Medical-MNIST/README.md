@@ -38,6 +38,24 @@ Three lightweight CNN variants were implemented and trained under identical cond
 - **Activation Layer Maps:** Visualized how deeper layers extract higher-level anatomical features, confirming consistent feature hierarchies across models.  
 - **Feature Propagation Diagrams:** Illustrated how inputs transform through convolutional stages, highlighting spatial and semantic abstraction.
 
+<img width="846" height="547" alt="image" src="https://github.com/user-attachments/assets/d92f8eb9-c71b-426e-9d7f-566651b36c6e" />
+
+<img width="663" height="618" alt="image" src="https://github.com/user-attachments/assets/218c27e0-7b3e-4cdf-a3f4-d770288563a4" />
+
+<img width="1136" height="359" alt="image" src="https://github.com/user-attachments/assets/8f2c5098-687c-4784-8c75-22345605347f" />
+
+<img width="1128" height="522" alt="image" src="https://github.com/user-attachments/assets/77fbfbc9-b662-4786-931f-ebd55f6d69df" />
+
+Input Image
+
+<img width="328" height="350" alt="image" src="https://github.com/user-attachments/assets/108a39e0-f88c-42b6-a5c1-5e9ea76b7631" />
+
+Example Propagation
+
+<img width="1151" height="1190" alt="image" src="https://github.com/user-attachments/assets/c93399ad-9b6e-415b-afcb-7dd0e02039ff" />
+
+
+
 ---
 
 ## Results
@@ -50,8 +68,7 @@ Three lightweight CNN variants were implemented and trained under identical cond
 
 ## Files
 
-- `compare_cnn.ipynb` — Main experiment notebook.  
-- `.keras` model files — Trained models for TinyCNN, Reduced-Filter CNN, and Global-Average-Pooling CNN.  
+- `medical_mnist_comparison_cnn.ipynb` — Main experiment notebook.  
 - Output visualizations:
   - Validation accuracy curves  
   - Confusion matrices  
